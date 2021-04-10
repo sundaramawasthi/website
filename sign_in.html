@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
 <title>W3.CSS Template</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
- <style> 
+<style>
+  
   input[type=text], input[type=password] {
   width: 80%;
   height:80%;
@@ -40,30 +39,7 @@ button:hover {
   background-color: red;
 }
   
- .cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 10px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-     width: 100%;
-  }
-}
-   
+  
   
   
   
@@ -79,24 +55,21 @@ body, html {height: 100%}
   background-position: center;
   background-size: cover;
 }
-
-
 </style>
-  </head>
 <body>
 
-<form action="HOME 1.HTML" method="post">
-
-  <div class="container">
-  
-  
-        
-<h1 style="text-align:center">
-Signup</h1>>
-   
-    <hr>
-
-    <label for="username"><b>username</b></label>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    
+  </div>
+  <div class="w3-display-middle" style=color:white;>
+    <h1> POCKET LIBRARY </h1>
+    <h2> SIGNUP </h1>
+    <hr class="w3-border-grey" style="margin:auto;width:80% color:green;">
+    
+    
+    <form>
+      <label for="username"><b>username</b></label>
     <input type="text" placeholder="Enter usename" name="username" required>
 
     <label for="psw"><b>library Id </b></label>
@@ -117,27 +90,20 @@ Signup</h1>>
   </select>
   <br/>
    <p><br/><br/>select image:
-     <input  type="file" name="fileupload" value="fileupload" />
-
-
-    
-    
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    </label>
-    
-  
-
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
+     <input  type="file" name="fileupload" value="fileupload" 
+   
+    <form> <button type="submit" formaction="
+    HOME 1.html">login</button>
+      
+      <button type="submit" formaction="
+    sign_in.html">signin</button>
+    </form>
+    <button type="button" class="cancelbtn">Cancel</button>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>
 </form>
-<form> <button type="submit" formaction="
-    home.html">login</button>
-    </form>
+
 </body>
 </html>
    
-    
