@@ -8,11 +8,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
   
-  input[type=text], input[type=password],input[type=address],input[type=age] {
+  input[type=text], input[type=password] {
   width: 60%;
   height:60%;
-  padding: 20px: 8px;
-  margin:10px 0;
+  padding: 10px 5px;
+  margin: 5px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -21,8 +21,8 @@
 button {
   background-color: #4CAF50;
   color:  light green;
-  padding: 20px 8px;
-  margin: 10px 0;
+  padding: 10px 5px;
+  margin: 5px 0;
   border: none;
   cursor: pointer;
   width: 60%;
@@ -35,11 +35,18 @@ button:hover {
 
 .cancelbtn {
   width: auto;
-  padding: 20px 8px;
+  padding: 10px 5px;
   background-color: red;
 }
   
-  }
+  
+  
+  
+  
+  
+
+  
+}
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
@@ -55,50 +62,44 @@ body, html {height: 100%}
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
     
   </div>
-  <div class="w3-display-middle" style=color:white;>
-    <br> <h1>POCKET LIBRARY </h1>
-    <h2> SIGNUP </h1>
-    <hr class="w3-border-grey" style="margin:auto;width:60% color:green;">
-    
-    
-    <form><br><br>
-      <label for="username"><b>username</b></label>
-    <input type="text" placeholder="Enter usename" name="username" required>
-       
-      <label for="psw"><b>library Id </b></label>
-    <input type="password" placeholder="library userId" name="psw" required>
-
-    <label for="address"><b> address</b></label>
-    <input type="text" placeholder="Enter address" name="asdress" require
-    
-    
-    <label for="age"><b> age</b></label>
-    <input type="text" placeholder=" Enter age" name="age" require
-    
-    <p> select gender:
+  <div class="w3-display-right" style=color:white;>
+    <h1> POCKET LIBRARY </h1>
+    <hr class="w3-border-grey" style="margin:auto;width:80% color:green;">
+    <form>
+          USERNAME<br>
+      <input type ="text" ><br></required>
+          LibraryID<br>
+    <input type=password ></required>
+         <b>ADDRESS</b>
+   <input type="text" ></required>
+         <b> AGE</b>
+  <input type="text"></required>
+        <b> select image:</b>
+     <input  type="file" name="fileupload" value="fileupload" 
+            
+  select gender:
        <select name=" gender">
        <option value="male">male</option>
        <option value="female">female</option>
        <option value="select">select</option>
   </select>
   
-   <p> select image:
-     <input  type="file" name="fileupload" value="fileupload" 
-   
-   <form>
-     <button type="submit" formaction="
-    sign_in.html">signin</button>
     </form>
-       <form>
-     <button type="submit" formaction="
+    
+   
+    <form> <button type="submit" formaction="
     sign_in.html">cancel</button>
+      
+      <button type="submit" formaction="
+    sign_in.html">signin</button>
     </form>
    
   
-    </div>
   </div>
-</form>
+  <div class="w3-display-bottomleft w3-padding-large">
+  
+  </div>
+</div>
 
 </body>
 </html>
-   
