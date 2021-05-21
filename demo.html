@@ -1,0 +1,178 @@
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body{
+background-image:url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882")
+
+}
+#mySidenav a {
+  position: absolute;
+  left: -600px;
+  transition: 0.3s;
+  padding: 40px;
+  width: 700px;
+  text-decoration: em;
+  font-size: 20px;
+  color: white;
+  border-radius: 0x 5px 5px 5px;
+}
+
+#mySidenav a:hover {
+  left: 30px;
+}
+
+
+#book {
+  top: 350px;
+  background-color: #5ae4b1;
+}
+#quiz{
+  top:200px;
+  background-color: #0f1110;
+}
+#note{
+  top: 240px;
+  background-color: #54a0dd;
+}
+
+#timetable {
+  top: 550px;
+  background-color: #555;
+}
+
+#paper {
+  top:500px;
+  background-color: rgb(17, 16, 16)
+}
+#attendence{
+  top: 420px;
+  background-color: #cf4f4f;
+}
+
+input[type=text], input[type=password] {
+   text-align:center;
+  width: 40%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 40%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 60%;
+  }
+}
+#content {
+            height: 200px;
+            width: 300px;
+            background: rgb(201, 207, 201) ;
+            margin-bottom:  1000px;
+            margin-left: 1000px ;
+        }
+a{
+  text-align: right;
+}
+</style>
+<body>
+ <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ <div id="mySidenav" class="sidenav">
+  <a href="book.html" id="book">book PDF</a>
+  <a href="notes.html" id="note">NOTES</a>
+  <a href="time.html" id="timetable">TIMETABLE</a>
+  <a href="paper.html" id="paper">papers</a>
+  <a href="attendence.html" id="attendence">Attendence</a>
+  <a href="quiz.html" id="quiz">quiz</a>
+</div>
+<div class="  bgimg w3-display-container  w3-text-white">
+  <div class="w3-display-topmiddle w3-jumbo">
+    <p>COLLeGE sPACe</p>
+  </div>
+
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
+  
+  </div>
+
+ <!-- Menu Modal -->
+ <div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <div class="w3-bar-block w3-center">
+        <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><h3>about</h3></a>
+        <a href="sign.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><h3>SIGNIN</h3></a>
+        <a href="index.php" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><h3>BACK</h3></a>
+      
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+<form>
+  <div id ="content"  > 
+   <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <br> <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <a class="button" href="login.html">LOGIN</a>
+        
+  <br>
+    <div class="container" style="background-color:#d3a4a4">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </div>
+ </div>
+</div>
+    </form>
+
+    <div class="w3-display-bottommiddle w3-container w3-text-white">
+      <p class="w3-xlarge">ALL YOU NEED! <BR>IS HERE</p>
+      </div>
+ 
+  </body>
+</html>
+
