@@ -1,43 +1,152 @@
 <html>
-<title>WEBSITE</title>
+<title>WEB PAGE </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
 <style>
-a{
-color:red;
+.card {
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
 }
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('https://vistapointe.net/images/wall-wallpaper-20.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
 }
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    
- </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top"> WEBSITES </h1>
-    
-    <hr class="w3-border-grey" style="margin:auto;width:80%">
-    <a href="index1.html"><h3>CLICK ME ! MY PROFILE</h3>
-      
-       <hr class="w3-border-WHITe" style="margin:auto;width:80%">
-    <a href="demo.html"><h3>CLICK ME ! COLLEGEsPACE</h3>
- 
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-   
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>HOME</b> Page</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">WEBSITES</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">feedback</a>
+    </div>
   </div>
 </div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:2000px;" id="home">
+
+  <img class="w3-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO4PN-UaNWzXKvnY5PO9w9_lmDOIsc0uN8ig&usqp=CAU" alt="WEBSITES" width="1500" height="1500">
+   <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>HOME PAGE</b></span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
+  </div>
+  
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">WEBSITES</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+         <a href="index.html">
+          <div class="w3-display-middle w3-black w3-padding">MY PROFILE</div>
+<img  alt="HOMEPAGE" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2lpsggmovD44hAmH2Yhu2EA0ZXpWAPSOpJQ&usqp=CAU" width="300" height="270">
+</a>
+        
+      </div>
+    </div>
+
+
+    
+    <div class="w3-col l3 m6 w3-margin-butom">
+      <div class="w3-display-container">
+         <a href="demo.html">
+          <div class="w3-display-middle w3-black w3-padding">COLLEGEsPACE</div>
+          <img  alt="HOMEPAGE" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24ce6ACkuHDwEB-mmfx-LAZbi-JlvBFNapO4juerN7qLbSdo0l3hpxt60RgLXG-MwRVs&usqp=CAU" width="400" height="270">
+             </a>
+        
+      </div>
+    </div>
+
+<!--about-->
+<div class="w3-container w3-padding-50" id="about">
+  <div class="w3-col l3 m6 w3-margin-buttom">
+    <h2 class="w3-border-bottom w3-border-black w3-padding-16">ABOUT</h2>
+  <div>
+    <div class="column">
+       <div class="card">
+      <img src="sa.jpg" alt="Sundram" style="width:50% ">
+       <div class="container">
+        <h2>SUNDRAM AWASTHI</h2>
+        <p class="title">CLG STUDENT</p>
+      <p>sundramawasthi0001<br>@gmail.com</p>
+        <p><a href="https://mail.google.com/">Send EMAIL</a></p>
+
+  <a class="button" href="contact1.html">MORE INFO</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">FEEDBACK</h3>
+    
+    <form>
+      <input class="w3-input w3-border" type="text" placeholder="FEEDBACK" required name="Name">
+      
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+
+  <img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882" style="width: 1500px; height: 150px;">
+
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer >
+  
+</footer>
 
 </body>
 </html>
